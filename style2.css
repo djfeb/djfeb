@@ -1,0 +1,158 @@
+
+body {
+    background: linear-gradient(to right, red, blue, green);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica; 
+    height: 50px;
+    color: black;
+    font-weight: 900;
+    background-color: rgb(34, 453, 3);
+    border: 2px solid blueviolet;
+    border-radius: 30px;
+    text-shadow: 2px 2px 4px rgba(254, 23, 69, 0.7);
+    box-shadow: 12px 12px 12px 12px inset red, -12px -12px 12px 12px inset red;
+   
+    
+}
+
+
+
+main.imgs {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1000px; 
+}
+
+div.column {
+    justify-content: space-between;
+    align-content: center;
+    vertical-align:middle;
+}
+
+
+
+
+div.column2 {
+    height: 1000px;
+    padding-left: 150px;
+}
+
+
+img.olimg {
+    
+    width: 300px;
+    height: 200px;
+    padding: 5px; 
+    border-radius: 30px;
+    
+}
+
+
+
+div.inp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+input.hn {
+    
+    border-radius: 20px;
+    border-color: aqua;
+    border-width: 10px;
+    width: 400px;
+    padding: 10px;
+    
+}
+
+
+
+.bn {
+    border-color: aqua;
+    border-radius: 20px 20px 20px 20px;
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    border-width: 10px;
+}
+
+div.foot {
+    display: flex;
+    flex-direction: row;
+     width: 1516px;
+     align-items: center;
+     justify-content: center;
+     height: 80px;   
+     border: 1px solid blueviolet;
+     background: linear-gradient(to left, red, blue, green);
+    
+     margin: -8px;
+     padding: 0px;
+     
+}
+
+div.conts {
+    
+    top: 20px;
+    left: 600px;
+    
+}
+
+img.what {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    
+}
+
+p.num {
+    font-weight: 600;
+    color: black;
+}
+
+ button {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: blueviolet;
+    font-weight: 600;
+    padding: 0px;
+    background-clip: content-box;
+    background-color: paleturquoise;
+    color: red;
+    margin-left: 20px;
+    
+ }
+  
+ @media (max-width: 960px) {
+    div.column2 {
+        /* padding: 18%; */
+        padding-left: 0.5%; 
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 80%;
+    }
+    img.olimg {
+        width: 23%; /* Ensure images are responsive */
+        height: 18%;
+    }
+    input.hn {
+        width: 40%; /* Adjust input for smaller screens */
+    }
+
+    div.foot {
+        width: 102%;
+    }
+
+}
