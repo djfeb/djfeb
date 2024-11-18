@@ -1,70 +1,83 @@
 <!DOCTYPE html>
-<html>
-   <head>
-       <title>Genius</title>
-       <meta charset="UTF-8">
-       <meta name="description" content="A beautiful image galery.">
-       <meta name="viewport" content="width=device-width initial-scale=1">
-       <meta name="author" content="Eric owusu">
-       <meta name="keywords" content="Galery">
-       <script src="script.js"></script>
-       <link rel="stylesheet" href="style.css">
-   </head>
-   
-   <body>
-     
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Eric Owusu">
+    <title>Eric Owusu - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
-        <nav class="hlist">
-            <ul style="list-style-type: none;">
-                <li><a href="#home" class="r1" style="text-decoration: none;">Home</a></li>
-                <li><a>About</a></li> 
-                <li><a>Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Eric Owusu</h1>
+        <h3>BSC SOFTWARE ENGINEERING: 1704121344 (Group F)</h3>
+
+        <p>Web Developer | Software Engineer | Tech Enthusiast</p>
     </header>
 
-
-    <aside>
-        <nav></nav>
-    </aside>
-
-    <main id="home">
-       
-    
-    <section id="ph" class="login form">
+    <nav>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
         
+    </nav>
+    <em>Designed by Eric owusu<br>1704121344</em>
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <img src="Eric.jpg" width="130px" height="120px" alt="Eric Owusu">
+            <p>
+                Hello! I'm Eric Owusu, a passionate web developer with a knack for building dynamic and user-friendly web applications. 
+                With experience in HTML, CSS, JavaScript, and modern frameworks, I aim to create impactful digital experiences. 
+                Let's connect and build something amazing!
+            </p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <img src="https://user-images.githubusercontent.com/37429704/50204561-40e65b80-03a0-11e9-918a-f837362410c2.png" alt="Random Quote Machine">
+                <div>
+                    <h3>Random Quote Machine</h3>
+                    <p>Generates random quotes.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="JavaScript Calculator">
+                <div>
+                    <h3>JavaScript Calculator</h3>
+                    <p>A simple calculator built with JavaScript.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+
         
-    <label for="name"><b>Name</b></label>
-    <input type="text" id="name" name="name">
 
-    <label for="email"><b>Email</b></label>
-    <input type="email" id="email" name="password">
+                <div class="project-item">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="Tic Tac Toe Game">
+                    <div>
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>A simple Tic Tac Toe game.</p>
+                        <a href="#">View Project</a>
+                    </div>
+            </div>
+        </section>
 
-    <label for="password"><b>Password</b></label>
-    <input type="password" id="password" name="password">
-    <input type="checkbox" id="check" onclick="checkpass()"><b id="show">Show Password</b>
-    <input type="button" id="button" name="button" value="Sign in">
-   </section>
-  
-   </main>
-   
-   
-   <footer id="foot"></footer>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>
+                Interested in working together or just want to say hello? Feel free to reach out!
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:eric.owusu@example.com">owusutm35@gmail.com</a></p>
+            <p><strong>Phone:</strong> +233592901340</p>
+            <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/ericowusu</a></p>
+        </section>
+    </div>
 
-
-    <script>
-        function checkpass() {
-        let a = document.getElementById("password")
-
-        if (a.type === "password") {
-            a.type = "text"
-            
-        }
-        else {
-            a.type = "password"
-        }
-    }
-    </script> 
-   </body>
-
+    <footer>
+        <p>&copy; 2024 Eric Owusu. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
